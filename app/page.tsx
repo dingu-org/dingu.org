@@ -33,20 +33,19 @@ const branches: Branch[] = [
 ];
 
 export default function Home() {
-  const year = new Date().getFullYear();
-
   return (
     <div className={styles.page}>
-      <header className={styles.header}>
-        <div className={styles.headerInner}>
-          <Wordmark href="https://dingu.org" />
-          <span className={styles.trunk}>TRUNK</span>
-        </div>
-      </header>
       <main className={styles.main}>
         <div className={styles.statement}>
+          <div className={styles.logo}>
+            <Wordmark href="https://dingu.org" size="clamp(32px, 5vw, var(--display-size))" />
+          </div>
           <h1 className={styles.title}>As little design as possible.</h1>
-          <p className={styles.subtitle}>what grows under dingu.org</p>
+          <p className={styles.subtitle}>
+            One tree, many branches. What grows under dingu.org: projects, each
+            in its own space, planted small, growing at its own pace, and kept
+            deliberately simple.
+          </p>
         </div>
         <div className={styles.group}>
           {branches.map((b, i) => (
@@ -57,14 +56,6 @@ export default function Home() {
           ))}
         </div>
       </main>
-      <footer className={styles.footer}>
-        <div className={styles.footerInner}>
-          <span className={styles.copyright}>
-            © {year} <a href="https://dingu.org">dingu.org</a>
-          </span>
-          <span>one tree, many branches</span>
-        </div>
-      </footer>
     </div>
   );
 }

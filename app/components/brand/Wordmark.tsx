@@ -2,7 +2,7 @@ import type { CSSProperties } from "react";
 import styles from "./Wordmark.module.css";
 
 type WordmarkProps = {
-  size?: number;
+  size?: number | string;
   color?: string;
   href?: string;
 };
