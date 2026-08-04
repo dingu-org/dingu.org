@@ -1,0 +1,28 @@
+.glyph {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.glyphTile {
+  color: #ffffff;
+}
+
+.dot {
+  display: inline-block;
+  width: 0.14em;
+  height: 0.14em;
+  border-radius: 50%;
+  background: var(--signal);
+  margin: 0 0.03em;
+}
+
+.tile {
+  border-radius: 50%;
+  background: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

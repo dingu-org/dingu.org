@@ -1,33 +1,34 @@
 import { Fragment } from "react";
+import { Wordmark } from "./components/brand/Wordmark";
+import type { BranchStatus } from "./components/brand/StatusDot";
+import { RegisterRow } from "./components/core/RegisterRow";
 import styles from "./page.module.css";
 
-type Status = "alive" | "growing" | "dormant" | "pruned";
-
-type Project = {
+type Branch = {
   sub: string;
   desc: string;
-  status: Status;
-  url: string;
+  status: BranchStatus;
+  href: string;
 };
 
-const projects: Project[] = [
+const branches: Branch[] = [
   {
     sub: "klaidi",
     desc: "learning by making",
     status: "growing",
-    url: "https://klaidi.dingu.org",
+    href: "https://klaidi.dingu.org",
   },
   {
     sub: "medium",
     desc: "quieting the inbox",
     status: "growing",
-    url: "https://medium.dingu.org",
+    href: "https://medium.dingu.org",
   },
   {
     sub: "umbra",
     desc: "feeding a calm mind",
     status: "growing",
-    url: "https://umbra.dingu.org",
+    href: "https://umbra.dingu.org",
   },
 ];
 
@@ -38,44 +39,29 @@ export default function Home() {
     <div className={styles.page}>
       <header className={styles.header}>
         <div className={styles.headerInner}>
-          <a href="#" className={styles.logo}>
-            dingu
-            <span className={styles.logoDot} />
-            org
-          </a>
+          <Wordmark href="https://dingu.org" />
           <span className={styles.trunk}>TRUNK</span>
         </div>
       </header>
       <main className={styles.main}>
-        <div className={styles.hero}>
+        <div className={styles.statement}>
           <h1 className={styles.title}>As little design as possible.</h1>
           <p className={styles.subtitle}>what grows under dingu.org</p>
         </div>
-        <div className={styles.tableHead}>
-          <span>BRANCH</span>
-          <span />
-          <span className={styles.tableHeadStatus}>STATUS</span>
+        <div className={styles.group}>
+          {branches.map((b, i) => (
+            <Fragment key={b.sub}>
+              {i > 0 && <div className={styles.sep} />}
+              <RegisterRow sub={b.sub} desc={b.desc} status={b.status} href={b.href} />
+            </Fragment>
+          ))}
         </div>
-        {projects.map((p, i) => (
-          <Fragment key={p.sub}>
-            {i > 0 && <div className={styles.divider} />}
-            <a href={p.url} className={styles.row}>
-              <span className={styles.branch}>
-                {p.sub}
-                <span className={styles.branchDomain}>.dingu.org</span>
-              </span>
-              <span className={styles.desc}>{p.desc}</span>
-              <span className={styles.status}>
-                <span className={`${styles.dot} ${styles[p.status]}`} />
-                {p.status}
-              </span>
-            </a>
-          </Fragment>
-        ))}
       </main>
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
-          <span>© {year} dingu.org</span>
+          <span className={styles.copyright}>
+            © {year} <a href="https://dingu.org">dingu.org</a>
+          </span>
           <span>one tree, many branches</span>
         </div>
       </footer>
