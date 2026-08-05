@@ -9,6 +9,7 @@ type Branch = {
   desc: string;
   status: BranchStatus;
   href: string;
+  domain?: string;
 };
 
 const branches: Branch[] = [
@@ -29,6 +30,13 @@ const branches: Branch[] = [
     desc: "feeding a calm mind",
     status: "growing",
     href: "https://umbra.dingu.org",
+  },
+  {
+    sub: "breakandanga",
+    desc: "dancing with gravity",
+    status: "growing",
+    href: "https://breakandanga.vercel.app",
+    domain: ".vercel.app",
   },
 ];
 
@@ -51,7 +59,13 @@ export default function Home() {
           {branches.map((b, i) => (
             <Fragment key={b.sub}>
               {i > 0 && <div className={styles.sep} />}
-              <RegisterRow sub={b.sub} desc={b.desc} status={b.status} href={b.href} />
+              <RegisterRow
+                sub={b.sub}
+                desc={b.desc}
+                status={b.status}
+                href={b.href}
+                domain={b.domain}
+              />
             </Fragment>
           ))}
         </div>
