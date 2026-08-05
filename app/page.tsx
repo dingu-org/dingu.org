@@ -33,7 +33,7 @@ const branches: Branch[] = [
   },
   {
     sub: "breakandanga",
-    desc: "dancing with gravity",
+    desc: "in other words",
     status: "growing",
     href: "https://breakandanga.vercel.app",
     domain: ".vercel.app",
