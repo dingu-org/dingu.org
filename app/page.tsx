@@ -34,7 +34,7 @@ const branches: Branch[] = [
   {
     sub: "breakandanga",
     desc: "in other words",
-    status: "growing",
+    status: "alive",
     href: "https://breakandanga.vercel.app",
     domain: ".vercel.app",
   },
