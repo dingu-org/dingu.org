@@ -20,7 +20,7 @@ export function StatusDot({ status = "growing", showLabel = true }: StatusDotPro
     return <span className="inline-flex">{dot}</span>;
   }
   return (
-    <span className="inline-flex items-center gap-2 font-mono text-xs tracking-[0.04em] text-stone-600">
+    <span className="inline-flex items-center gap-2 font-mono text-sm tracking-[0.04em]">
       {dot}
       {status}
     </span>

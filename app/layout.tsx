@@ -12,13 +12,13 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "dingu.org",
-  description: "what grows under dingu.org",
+  description: "projects and tools, growing under dingu.org",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${plexMono.variable} bg-stone-50`}>
-      <body className="bg-stone-50 font-sans text-stone-800 antialiased">
+    <html lang="en" className={`${plexMono.variable} bg-paper`}>
+      <body className="bg-paper font-sans text-black antialiased [font-synthesis-weight:none]">
         {children}
         <Analytics />
         <SpeedInsights />
