@@ -44,7 +44,7 @@ export default function Home() {
           grow into tools.
         </p>
         <SectionTitle>Projects</SectionTitle>
-        <div className="mt-4 overflow-hidden rounded-xl border border-stone-200 bg-card">
+        <div className="mt-4 overflow-hidden rounded-xl border border-stone-200 bg-white">
           {branches.map((b, i) => (
             <Fragment key={b.sub}>
               {i > 0 && <div className="mx-5 border-t border-stone-200" />}
