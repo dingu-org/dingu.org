@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Fragment } from "react";
 import type { BranchStatus } from "./components/brand/StatusDot";
 import { RegisterRow } from "./components/core/RegisterRow";
@@ -38,6 +39,14 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="mx-auto w-full max-w-2xl flex-1 px-6 py-24">
+        <Image
+          src="/brand/dingu-mark-tile.svg"
+          alt=""
+          width={24}
+          height={24}
+          className="mb-5 size-6"
+          priority
+        />
         <SectionTitle>dingu.org</SectionTitle>
         <p className="mt-4 max-w-[560px] pb-12 text-sm/relaxed text-pretty">
           One tree, many branches. Projects planted small under dingu.org. Some
