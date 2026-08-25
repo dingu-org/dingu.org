@@ -3,6 +3,7 @@
 @theme {
   --color-paper: #f8f7f4;
   --color-card: #fafaf8;
+  --color-wash: #f1efe9;
 
   --color-signal: oklch(0.55 0.09 120);
   --color-signal-pressed: oklch(0.45 0.09 120);
