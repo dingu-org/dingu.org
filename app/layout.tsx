@@ -12,7 +12,7 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "dingu.org",
-  description: "projects and tools, growing under dingu.org",
+  description: "an index of projects, some grown into tools",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

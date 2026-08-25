@@ -14,10 +14,12 @@ The site is a tree with branches on it. That is the whole metaphor, and it is al
 
 The rule that keeps this honest: **one nature image per sentence.** A tree with branches on it is one image, not two. Stack a second into the same sentence and the metaphor stops describing anything and starts performing.
 
+**Where the metaphor lies.** A tree grows its branches, so the image implies dingu.org is where these projects come from. It is not; it indexes them. Keep `branch` for what a project is, and never let the surrounding verb claim dingu.org hosts, owns, or grew it.
+
 **Do**
 - "pruned"
 - "dormant"
-- "One tree, many branches."
+- "Every branch here is a project. Each planted small."
 - "projects planted small, each moving at its own pace"
 
 **Don't**
@@ -25,6 +27,8 @@ The rule that keeps this honest: **one nature image per sentence.** A tree with 
 - "Every project begins as a seed."
 - "Rooted in intention, grown with care."
 - "We believe in slow, deliberate growth."
+- "projects planted small under dingu.org" (retired: claims dingu.org hosts them)
+- "One tree, many branches." (retired: the image alone, saying nothing about what the page lists)
 
 ---
 
@@ -104,6 +108,10 @@ The rule that keeps this honest: **one nature image per sentence.** A tree with 
 
 **Never write "simple."** The site is simple, which is exactly why it must never say so. The same goes for `minimal`, `clean`, `thoughtful`, and `carefully crafted`. The design is the proof; the adjective only weakens it.
 
+**Facts the copy must not get wrong.** dingu.org is an index. Any line implying the projects live under, run on, or originate from it is wrong, however well it scans.
+
+**Where a project is hosted is not copy.** Some sit on `*.dingu.org` subdomains and some on unrelated domains. The row shows each address already, so prose that explains the arrangement is spending a sentence on plumbing. Say what a branch is, not where it lives.
+
 **Locale.** No clear signal in the shipped copy yet. Assume en-US until a spelling forces the question, then record the answer here.
 
 ---
@@ -116,4 +124,5 @@ Read it against these in order. A no anywhere means rewrite, not soften.
 2. Does every nature word do a job a plain word could not?
 3. More than one nature image in any single sentence?
 4. Any adjective making a claim the page does not already prove?
-5. Shortest true version?
+5. Does it imply dingu.org hosts or grew the projects rather than indexing them?
+6. Shortest true version?

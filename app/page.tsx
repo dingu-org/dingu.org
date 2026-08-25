@@ -48,8 +48,8 @@ export default function Home() {
         />
         <SectionTitle as="h1">dingu.org</SectionTitle>
         <p className="mt-4 max-w-[560px] pb-12 text-sm/relaxed text-pretty">
-          One tree, many branches. Projects planted small under dingu.org. Some
-          grow into tools.
+          Every branch here is a project. Each planted small. Some grow into
+          tools.
         </p>
         <SectionTitle>Projects</SectionTitle>
         <ul className="mt-4 overflow-hidden rounded-xl border border-stone-200 bg-white">
