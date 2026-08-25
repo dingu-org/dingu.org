@@ -1,36 +1,38 @@
 import Image from "next/image";
-import type { BranchStatus } from "./components/brand/StatusDot";
-import { RegisterRow } from "./components/core/RegisterRow";
+import { ProjectItem, type BranchStatus } from "./components/core/ProjectItem";
 import { SectionTitle } from "./components/core/SectionTitle";
 
 type Branch = {
-  sub: string;
-  status: BranchStatus;
+  name: string;
+  desc: string;
   href: string;
-  domain?: string;
+  status: BranchStatus;
 };
 
 const branches: Branch[] = [
   {
-    sub: "klaidi",
-    status: "growing",
+    name: "klaidi",
+    desc: "personal site and portfolio",
     href: "https://klaidi.dingu.org",
+    status: "growing",
   },
   {
-    sub: "medium",
-    status: "growing",
+    name: "medium",
+    desc: "appointment assistant for WhatsApp",
     href: "https://medium.dingu.org",
-  },
-  {
-    sub: "umbra",
     status: "growing",
-    href: "https://umbra.dingu.org",
   },
   {
-    sub: "breakandanga",
-    status: "alive",
+    name: "umbra",
+    desc: "mindfulness through museum art",
+    href: "https://umbra.dingu.org",
+    status: "growing",
+  },
+  {
+    name: "in other words",
+    desc: "editorial strategy and copy editing",
     href: "https://breakandanga.vercel.app",
-    domain: ".vercel.app",
+    status: "alive",
   },
 ];
 
@@ -52,15 +54,14 @@ export default function Home() {
           tools.
         </p>
         <SectionTitle>Projects</SectionTitle>
-        <ul className="mt-4 overflow-hidden rounded-xl border border-stone-200 bg-white">
-          {branches.map((b, i) => (
-            <li key={b.sub}>
-              {i > 0 && <div className="mx-5 border-t border-stone-200" />}
-              <RegisterRow
-                sub={b.sub}
-                status={b.status}
+        <ul className="mt-6 space-y-8">
+          {branches.map((b) => (
+            <li key={b.name}>
+              <ProjectItem
+                name={b.name}
+                desc={b.desc}
                 href={b.href}
-                domain={b.domain}
+                status={b.status}
               />
             </li>
           ))}

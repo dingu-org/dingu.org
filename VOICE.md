@@ -102,7 +102,9 @@ The rule that keeps this honest: **one nature image per sentence.** A tree with 
 
 **Punctuation.** No terminal period on labels or descriptors. No exclamation marks. No em dashes or their stand-ins anywhere, in copy or in docs.
 
-**Length.** Project descriptions: three to five words, gerund-led. Prose blocks: three sentences at most.
+**Length.** Project descriptions: three to five words. Prose blocks: three sentences at most.
+
+**Project descriptions name the thing.** A reader arriving at the index knows none of these projects, so the description says what it is, not what it feels like. `appointment assistant for WhatsApp`, not `booking appointments over WhatsApp`. Gerund-led lines read as mood next to a name they cannot place. One naming adjective is allowed when it does the work, as in `personal site and portfolio`.
 
 **Signature words.** `grow`, `plant`, `prune`, `branch`, `alive`, `dormant`. A generic editing pass will read these as decorative metaphor and try to strip them. They stay. That is the whole voice.
 
@@ -110,7 +112,7 @@ The rule that keeps this honest: **one nature image per sentence.** A tree with 
 
 **Facts the copy must not get wrong.** dingu.org is an index. Any line implying the projects live under, run on, or originate from it is wrong, however well it scans.
 
-**Where a project is hosted is not copy.** Some sit on `*.dingu.org` subdomains and some on unrelated domains. The row shows each address already, so prose that explains the arrangement is spending a sentence on plumbing. Say what a branch is, not where it lives.
+**Where a project is hosted is not copy.** Some sit on `*.dingu.org` subdomains and some on unrelated domains. The list does not show addresses at all now; the visit link carries each one, so prose that explains the arrangement is spending a sentence on plumbing. Say what a branch is, not where it lives.
 
 **Locale.** No clear signal in the shipped copy yet. Assume en-US until a spelling forces the question, then record the answer here.
 
