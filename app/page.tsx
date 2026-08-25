@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Fragment } from "react";
 import type { BranchStatus } from "./components/brand/StatusDot";
 import { RegisterRow } from "./components/core/RegisterRow";
 import { SectionTitle } from "./components/core/SectionTitle";
@@ -38,7 +37,7 @@ const branches: Branch[] = [
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <main className="mx-auto w-full max-w-2xl flex-1 px-6 py-24">
+      <main className="mx-auto w-full max-w-xl flex-1 px-6 py-24">
         <Image
           src="/brand/dingu-mark-tile.svg"
           alt=""
@@ -47,15 +46,15 @@ export default function Home() {
           className="mb-5 size-6"
           priority
         />
-        <SectionTitle>dingu.org</SectionTitle>
+        <SectionTitle as="h1">dingu.org</SectionTitle>
         <p className="mt-4 max-w-[560px] pb-12 text-sm/relaxed text-pretty">
           One tree, many branches. Projects planted small under dingu.org. Some
           grow into tools.
         </p>
         <SectionTitle>Projects</SectionTitle>
-        <div className="mt-4 overflow-hidden rounded-xl border border-stone-200 bg-white">
+        <ul className="mt-4 overflow-hidden rounded-xl border border-stone-200 bg-white">
           {branches.map((b, i) => (
-            <Fragment key={b.sub}>
+            <li key={b.sub}>
               {i > 0 && <div className="mx-5 border-t border-stone-200" />}
               <RegisterRow
                 sub={b.sub}
@@ -63,9 +62,9 @@ export default function Home() {
                 href={b.href}
                 domain={b.domain}
               />
-            </Fragment>
+            </li>
           ))}
-        </div>
+        </ul>
       </main>
     </div>
   );

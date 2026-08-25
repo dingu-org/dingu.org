@@ -7,17 +7,25 @@ type StatusDotProps = {
 
 const dotColor: Record<BranchStatus, string> = {
   alive: "bg-signal",
-  growing: "bg-signal animate-pulse",
+  growing: "bg-signal animate-pulse motion-reduce:animate-none",
   dormant: "bg-stone-400",
   pruned: "bg-stone-200",
 };
 
 export function StatusDot({ status = "growing", showLabel = true }: StatusDotProps) {
   const dot = (
-    <span className={`size-[7px] flex-none rounded-full ${dotColor[status]}`} />
+    <span
+      aria-hidden="true"
+      className={`size-[7px] flex-none rounded-full ${dotColor[status]}`}
+    />
   );
   if (!showLabel) {
-    return <span className="inline-flex">{dot}</span>;
+    return (
+      <span className="inline-flex">
+        {dot}
+        <span className="sr-only">{status}</span>
+      </span>
+    );
   }
   return (
     <span className="inline-flex items-center gap-2 font-mono text-sm tracking-[0.04em]">
