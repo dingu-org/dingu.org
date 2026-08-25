@@ -5,7 +5,6 @@
   --color-wash: #f1efe9;
 
   --color-signal: oklch(0.55 0.09 120);
-  --color-signal-pressed: oklch(0.45 0.09 120);
 
   --font-sans: var(--font-plex-mono, "IBM Plex Mono"), monospace;
   --font-mono: var(--font-plex-mono, "IBM Plex Mono"), monospace;
