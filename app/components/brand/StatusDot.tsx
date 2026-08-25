@@ -1,5 +1,3 @@
-import styles from "./StatusDot.module.css";
-
 export type BranchStatus = "alive" | "growing" | "dormant" | "pruned";
 
 type StatusDotProps = {
@@ -7,13 +5,22 @@ type StatusDotProps = {
   showLabel?: boolean;
 };
 
+const dotColor: Record<BranchStatus, string> = {
+  alive: "bg-signal",
+  growing: "bg-signal animate-pulse",
+  dormant: "bg-stone-400",
+  pruned: "bg-stone-200",
+};
+
 export function StatusDot({ status = "growing", showLabel = true }: StatusDotProps) {
-  const dot = <span className={`${styles.dot} ${styles[status]}`} />;
+  const dot = (
+    <span className={`size-[7px] flex-none rounded-full ${dotColor[status]}`} />
+  );
   if (!showLabel) {
-    return <span className={styles.bare}>{dot}</span>;
+    return <span className="inline-flex">{dot}</span>;
   }
   return (
-    <span className={styles.status}>
+    <span className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.04em] text-stone-600">
       {dot}
       {status}
     </span>

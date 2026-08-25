@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import { Wordmark } from "./components/brand/Wordmark";
 import type { BranchStatus } from "./components/brand/StatusDot";
 import { RegisterRow } from "./components/core/RegisterRow";
-import styles from "./page.module.css";
 
 type Branch = {
   sub: string;
@@ -42,23 +41,28 @@ const branches: Branch[] = [
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <div className={styles.statement}>
-          <div className={styles.logo}>
-            <Wordmark href="https://dingu.org" size="clamp(32px, 5vw, var(--display-size))" />
+    <div className="flex min-h-screen flex-col">
+      <main className="mx-auto w-full max-w-screen-sm flex-1 px-6 py-24">
+        <div className="pb-10 max-sm:pb-6">
+          <div className="mb-6">
+            <Wordmark
+              href="https://dingu.org"
+              className="text-[clamp(32px,5vw,52px)]"
+            />
           </div>
-          <h1 className={styles.title}>As little design as possible.</h1>
-          <p className={styles.subtitle}>
+          <h1 className="max-w-[700px] text-[22px]/[1.45] font-normal text-pretty">
+            As little design as possible.
+          </h1>
+          <p className="mt-2 max-w-[560px] text-[17px]/[1.55] text-pretty text-stone-600">
             One tree, many branches. What grows under dingu.org: projects, each
             in its own space, planted small, growing at its own pace, and kept
             deliberately simple.
           </p>
         </div>
-        <div className={styles.group}>
+        <div className="overflow-hidden rounded-xl border border-stone-200 bg-white">
           {branches.map((b, i) => (
             <Fragment key={b.sub}>
-              {i > 0 && <div className={styles.sep} />}
+              {i > 0 && <div className="mx-5 border-t border-stone-200" />}
               <RegisterRow
                 sub={b.sub}
                 desc={b.desc}

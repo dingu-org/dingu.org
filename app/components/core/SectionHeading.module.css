@@ -1,9 +1,0 @@
-.heading {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: var(--label-tracking);
-  text-transform: uppercase;
-  color: var(--text-label);
-  border-bottom: 1px solid var(--ink);
-  padding-bottom: 10px;
-}

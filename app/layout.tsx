@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={plexMono.variable}>
-      <body>
+    <html lang="en" className={`${plexMono.variable} bg-stone-50`}>
+      <body className="bg-stone-50 font-sans text-stone-800 antialiased">
         {children}
         <Analytics />
         <SpeedInsights />
