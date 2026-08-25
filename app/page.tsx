@@ -43,17 +43,14 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-6 py-24">
-        <div className="pb-10 max-sm:pb-6">
-          <div className="mb-6">
-            <Wordmark
-              href="https://dingu.org"
-              className="text-[clamp(32px,5vw,52px)]"
-            />
+        <div className="pb-12">
+          <div className="mb-4">
+            <Wordmark href="https://dingu.org" />
           </div>
-          <h1 className="max-w-[700px] text-[22px]/[1.45] font-normal text-pretty">
+          <h1 className="max-w-[700px] text-sm font-medium text-pretty">
             As little design as possible.
           </h1>
-          <p className="mt-2 max-w-[560px] text-[17px]/[1.55] text-pretty text-stone-600">
+          <p className="mt-1 max-w-[560px] text-sm/relaxed text-pretty text-stone-600">
             One tree, many branches. What grows under dingu.org: projects, each
             in its own space, planted small, growing at its own pace, and kept
             deliberately simple.

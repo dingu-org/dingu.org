@@ -4,8 +4,8 @@ type WordmarkProps = {
 };
 
 export function Wordmark({ href, className }: WordmarkProps) {
-  const classes = `inline-flex items-baseline font-sans font-bold tracking-[-0.02em] ${
-    className ?? "text-lg"
+  const classes = `inline-flex items-baseline font-sans font-medium ${
+    className ?? "text-base"
   }`;
   const children = (
     <>
