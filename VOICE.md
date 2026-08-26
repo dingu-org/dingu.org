@@ -14,12 +14,12 @@ The site is a tree with branches on it. That is the whole metaphor, and it is al
 
 The rule that keeps this honest: **one nature image per sentence.** A tree with branches on it is one image, not two. Stack a second into the same sentence and the metaphor stops describing anything and starts performing.
 
-**Where the metaphor holds.** A tree grows its branches, and that is the claim the site now makes: these projects come from dingu.org. Keep `branch` for what a project is, and keep the verb about origin — cultivated, planted — not about hosting or owning.
+**Where the metaphor holds.** A tree grows its branches, and that is the claim the site now makes: these projects come from dingu.org, alone or with the people it works with. Keep `branch` for what a project is, and keep the verb about origin — cultivated, planted — not about hosting or owning.
 
 **Do**
 - "pruned"
 - "dormant"
-- "Every project here is cultivated by dingu.org. Each planted small."
+- "Every project here is cultivated by or with dingu.org. Each planted small."
 - "projects planted small, each moving at its own pace"
 
 **Don't**
