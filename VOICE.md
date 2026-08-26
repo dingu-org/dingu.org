@@ -14,12 +14,12 @@ The site is a tree with branches on it. That is the whole metaphor, and it is al
 
 The rule that keeps this honest: **one nature image per sentence.** A tree with branches on it is one image, not two. Stack a second into the same sentence and the metaphor stops describing anything and starts performing.
 
-**Where the metaphor lies.** A tree grows its branches, so the image implies dingu.org is where these projects come from. It is not; it indexes them. Keep `branch` for what a project is, and never let the surrounding verb claim dingu.org hosts, owns, or grew it.
+**Where the metaphor holds.** A tree grows its branches, and that is the claim the site now makes: these projects come from dingu.org. Keep `branch` for what a project is, and keep the verb about origin — cultivated, planted — not about hosting or owning.
 
 **Do**
 - "pruned"
 - "dormant"
-- "Every branch here is a project. Each planted small."
+- "Every project here is cultivated by dingu.org. Each planted small."
 - "projects planted small, each moving at its own pace"
 
 **Don't**
@@ -27,7 +27,6 @@ The rule that keeps this honest: **one nature image per sentence.** A tree with 
 - "Every project begins as a seed."
 - "Rooted in intention, grown with care."
 - "We believe in slow, deliberate growth."
-- "projects planted small under dingu.org" (retired: claims dingu.org hosts them)
 - "One tree, many branches." (retired: the image alone, saying nothing about what the page lists)
 
 ---

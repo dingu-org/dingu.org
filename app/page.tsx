@@ -50,8 +50,8 @@ export default function Home() {
         />
         <SectionTitle as="h1">dingu.org</SectionTitle>
         <p className="mt-4 max-w-[560px] pb-12 text-sm/relaxed text-pretty">
-          Every branch here is a project. Each planted small. Some grow into
-          tools.
+          Every project here is cultivated by dingu.org. Each planted small.
+          Some grow into tools.
         </p>
         <SectionTitle>Projects</SectionTitle>
         <ul className="mt-6 space-y-8">
