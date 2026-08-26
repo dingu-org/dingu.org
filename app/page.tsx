@@ -41,11 +41,11 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <main className="mx-auto w-full max-w-xl flex-1 px-6 py-24">
         <Image
-          src="/brand/dingu-mark-tile.svg"
+          src="/brand/logo.svg"
           alt=""
-          width={24}
-          height={24}
-          className="mb-5 size-6"
+          width={32}
+          height={32}
+          className="mb-5 size-8"
           priority
         />
         <SectionTitle as="h1">dingu.org</SectionTitle>

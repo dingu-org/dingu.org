@@ -4,7 +4,7 @@
   --color-paper: #f8f7f4;
   --color-wash: #f1efe9;
 
-  --color-signal: oklch(0.55 0.09 120);
+  --color-signal: #00e676;
 
   --font-sans: var(--font-plex-mono, "IBM Plex Mono"), monospace;
   --font-mono: var(--font-plex-mono, "IBM Plex Mono"), monospace;
