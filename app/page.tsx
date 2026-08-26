@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { ProjectItem, type BranchStatus } from "./components/core/ProjectItem";
 import { SectionTitle } from "./components/core/SectionTitle";
+import { JsonLd } from "./components/core/JsonLd";
+import { siteUrl, websiteId, webpageId, projectsId } from "./lib/site";
 
 type Branch = {
   name: string;
@@ -39,6 +41,41 @@ const branches: Branch[] = [
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": webpageId,
+              url: siteUrl,
+              name: "dingu.org — an index of projects",
+              isPartOf: { "@id": websiteId },
+              mainEntity: { "@id": projectsId },
+            },
+            {
+              "@type": "ItemList",
+              "@id": projectsId,
+              name: "Projects",
+              numberOfItems: branches.length,
+              itemListOrder: "https://schema.org/ItemListUnordered",
+              mainEntityOfPage: { "@id": webpageId },
+              itemListElement: branches.map((b, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                item: {
+                  "@type": "WebSite",
+                  "@id": b.href,
+                  name: b.name,
+                  description: b.desc,
+                  url: b.href,
+                  creativeWorkStatus: b.status,
+                },
+              })),
+            },
+          ],
+        }}
+      />
       <main className="mx-auto w-full max-w-xl flex-1 px-6 py-24">
         <Image
           src="/brand/logo.svg"
